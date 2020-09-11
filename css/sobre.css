@@ -1,0 +1,366 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: #ecf0f1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;  
+    background: #313131;
+    height: 90px;
+}
+/* #menuMobile{
+    display: none;
+    justify-content: center;
+}
+#menuMobile button{
+    margin: 15px;
+    color: #333;
+    background: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menuMobile h1{
+    font-size: 6px;
+} */
+#menuMobile{
+    display: none;
+    justify-content: left;
+    background: #313131;
+}
+#menuMobile button{
+    margin: 10px;
+    color: #fff;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menumobile button:active{
+    color: #ccc;
+}
+#menuMobile h1{
+    font-size: 6px;
+}       
+.titleEduca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: titleECAn;
+    animation-duration: 0.5s;
+}
+@keyframes titleECAn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+} 
+.foto{
+    height: 100px;
+    width: 100px;
+    /* background-image: url('../assets/fotosEquipe/0d1f2e08-246d-4dcf-8696-51cc0163c308.JPG');
+    background-size: 100%; */
+    border-radius: 4px;
+    margin: 0 auto 0 auto;
+}
+/* .foto img{
+    object-fit: cover;
+    height: 100px;
+} */
+.logpDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: logoAnimation;
+    animation-duration: 0.5s;
+}
+@keyframes logoAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+}
+img.logoEC{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titleEC{
+    text-align: center;
+    margin-top: 0%;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 75pt; 
+}
+.menu{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+.menu a:hover{
+    color: #ccc;
+}
+#darkModeBtn{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    transition: 0.2s;
+}
+#darkModeBtn:hover{
+    color: #eee;
+}
+#darkModeBtn:active{
+    color: #ccc;
+}
+#darkModeBtnMobile{
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -10px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+    margin-top: 10px;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+.pageTitle{
+    color: #111;
+    font-family: 'Arial', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 5px;
+    animation-name: sobreH1Animation;
+    animation-duration: 1.5s;
+    cursor: default;
+}
+@keyframes sobreH1Animation{
+    from{
+        opacity: 0;
+        margin-top: 200px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 5px;
+    }
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content1 h1{
+    text-align: center;
+    color: #111;
+    font-family: 'Arial', sans-serif;
+    animation-name: caixas;
+    animation-duration: 1s;
+    cursor: default;
+}
+.formPessoa{
+    background: #313131;
+    width: 400px;
+    height: 150px;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    animation-name: caixas;
+    animation-duration: 1.5s;
+    transition: all 0.2s;
+}
+.formPessoa h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 25pt;
+    margin: 10px;
+}
+.formPessoa p{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #E6B31E;
+    cursor: default;
+}
+.formPessoa:hover{
+    box-shadow: 0 0 20px -5px;
+    background: #313131;
+}
+@keyframes caixas{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 750px) {
+    header{
+        background: transparent;
+    }
+    #darkModeBtn{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    .formPessoa{
+        width: 150px;
+    }
+    .formPessoa h1{
+        font-size: 20pt;
+    }
+    .pageTitle h1{
+        font-size: 40pt;
+    }
+    .content{
+        margin-top: -10px;
+    }
+    .content1 h1{
+        font-size: 20pt;
+    }
+    #insta{
+        background: #74b9ff;
+    }
+    #facebook{
+        background: #3b5998;
+    }
+}
+footer{
+    background: #2E2E2E;
+    margin-top: 50px;
+    height: 355px;
+}
+#place, #phone{
+    font-size: 13pt;
+    transform: translateY(3px);
+    margin-right: 5px;
+}
+#phone{
+    margin: 5px;
+}
+footer #insta, #facebook{
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 00px;
+    font-size: 30pt;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#insta, #facebook{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#insta:hover{
+    background:#74b9ff;
+}
+#facebook:hover{
+    background: #3b5998;
+}
+.containerFooter{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    cursor: default;
+    overflow: hidden;
+}
+.btnMais{
+    color: #fff;
+    text-decoration: none;
+}
+.cret{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 2px;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cret:hover{
+    background: #E6B31E;
+    color: #fff;
+    border: 3px solid #E6B31E;
+    border-radius: 8px;
+}

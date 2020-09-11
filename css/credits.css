@@ -1,0 +1,306 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: #ecf0f1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+header{
+    display: flex;  
+    background: #313131;
+    height: 90px;
+}
+#menuMobile{
+    display: none;
+    justify-content: left;
+    background: #313131;
+}
+#menuMobile button{
+    margin: 10px;
+    color: #fff;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menumobile button:active{
+    color: #ccc;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+#darkModeBtnMobile{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
+}
+.titleEduca{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: titleECAn;
+    animation-duration: 2s;
+    margin-top: 0%;
+}
+@keyframes titleECAn{
+    from{
+        opacity: 0;
+        margin-top: 80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 00%;
+    }  
+} 
+.logpDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+}
+@keyframes logoAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }  
+}
+img.logoEC{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titleEC{
+    text-align: center;
+    margin-top: 0%;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 75pt; 
+}
+.menu{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+    text-decoration: none;
+    margin: 10px;
+}
+.menu a:hover{
+    color: #ccc;
+}
+#darkModeBtn{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    transition: 0.2s;
+}
+#darkModeBtn:hover{
+    color: #eee;
+}
+#darkModeBtn:active{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -10px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+    margin-top: 10px;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+.container{
+    margin-top: 130px;
+}
+.caixas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: caixaAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes caixaAnim{
+    from{
+        opacity: 0;
+        margin-top: 200px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.container h1{
+    color: #111;
+    font-family: 'Arial', sans-serif;
+    font-size: 35pt;
+    text-align: center;
+    animation-name: h1Anima;
+    animation-duration: 3s;
+    cursor: default;
+}
+.forms{
+    background: #fff;
+    margin: 20px;   
+    margin-right: 0;
+    padding: 20px;
+    width: 400px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 30px;
+    transition: all 0.3s;
+}
+.forms:hover{
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+.forms h1{
+    color: #333;
+    text-align: center;
+    cursor: default;
+}
+.forms p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    cursor: default;
+}
+.forms button{
+    color: white;
+    background: #E6B31E;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;   
+    margin: 10px;
+    transition: all 0.2s;
+    outline: none;
+}
+.forms button:hover{
+    background: #997405;
+}
+.forms button:hover i{
+    transform: translateY(-2px);
+}
+.forms i{
+    font-size: 20pt;
+    transition: all 0.3s;
+}
+.forms p{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.names p{
+    font-size: 10pt;
+
+}
+@media only screen and (max-width: 1150px){
+    
+}
+@media only screen and (max-width: 750px){
+    .container h1{
+        font-size: 20pt;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #darkModeBtnMobile{
+        display: flex;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu button{
+        color: #333;
+    }
+    .logo{
+        opacity: 0;
+    }    
+    .caixas{
+        flex-direction: column;
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .forms{
+        width: 250px;
+        justify-content: center;
+    }
+    .container{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/sobre.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo-2019_2_.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ab5fad5172.js"></script>
+    <meta name="google" content="notranslate">
+    <script src="js/principal.js"></script>
+    <title>Sobre | Educa Center</title>
+</head>
+<body id="teste1">
+    <div id="menuMobile">
+        <button onclick="redirectPrincipal()"><i class="material-icons">home</i> <h1>início</h1></button>
+        <button onclick="redirectCursos()"><i class="material-icons">pageview</i><h1>Cursos</h1></button>
+        <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
+        <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
+
+        <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
+    </div>
+    <div id="content">
+            <div align="center" class="logo">
+            <img onclick="easterEgg()" class="imgLogo" src="assets/logo 2019.jpg"/>
+        </div>
+        <header class="cabecalho">
+            <div class="menu">
+                <a href="index.html" id="btnPrincipal">início</a>
+                <a href="cursos.html">cursos</a>
+                <a onclick="loop()">sobre</a>
+                <a href="contatos.html">contato</a>
+            </div>
+
+            <i id="darkModeBtn" class="material-icons">invert_colors</i>
+        </header>
+        <div class="pageTitle">
+            <h1>Sobre nós</h1>
+        </div>
+        <div class="content1">
+            <h1 id="cargo1">Equipe</h1>
+            <div class="formPessoa">
+                <div style="background-image: url('assets/fotosEquipe/FotoAlexandre.JPG'); background-size: 100%" class="foto"></div>
+                <h1>Alexandre Corso</h1>
+            </div>
+            <div class="formPessoa">
+                <div style="background-image: url('assets/fotosEquipe/IMG-0005 (1).JPG'); transform: rotate(90deg); background-size: 100%; background-repeat: no-repeat; background-size: 150px; background-position-x: 40%;background-position-y: 50%;" class="foto"></div>
+                <h1>Cíntia Gonsalves</h1>
+            </div>
+            <div class="formPessoa">
+                <div style="background-image: url('assets/fotosEquipe/Andre Rodrigues     Instrutor de Laboratório.JPG'); background-position: 50% 50% ;background-size: 100%" class="foto"></div>
+                <h1>André Rodrígues</h1>
+            </div>
+            <div class="formPessoa">
+                    <div style="background-image: url('assets/fotosEquipe/bc966ceb-e21e-4ff3-aba2-7735e2e62efb (2).JPG'); background-position: 50% 40%;background-size: 100%" class="foto"></div>
+                <h1>Daniel Orel</h1>
+            </div>
+            <div class="formPessoa">
+                    <div style="background-image: url('assets/fotosEquipe/0d1f2e08-246d-4dcf-8696-51cc0163c308.JPG'); background-size: 100%" class="foto"></div>
+                <h1>Richard Araújo</h1>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="containerFooter">
+            <i id="facebook" onclick="facebook()" class="fab fa-facebook-square"></i>
+            <i id="insta" onclick="insta()" class="fab fa-instagram"></i>
+        </div>
+        <button onclick="easterEgg()"class="cret">Créditos</button>
+        <p><i id="place" class="material-icons">place</i>R. Iririú, 1060 - Saguaçu, Joinville - SC, 89227-045</p>
+        <p><i id="phone" class="material-icons">phone</i>(47) 3202-5211</p>
+        <p>© EducaCenter 2020</p>
+    </footer>
+    <script src="js/darkMode.js"></script>
+</body>
+</html>

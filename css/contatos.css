@@ -1,0 +1,227 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    background: #ecf0f1;
+    background-attachment: fixed;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;  
+    background: #313131;
+    height: 90px;
+}
+#menuMobile{
+    display: none;
+    justify-content: left;
+    background: #313131;
+}
+#menuMobile button{
+    margin: 10px;
+    color: #fff;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menumobile button:active{
+    color: #ccc;
+}
+#menuMobile h1{
+    font-size: 6px;
+}
+#darkModeBtnMobile{
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 84%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+#darkModeBtnMobile:active{
+    color: #ccc;
+}
+.menu{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+.menu a{
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15pt;
+    font-family: 'arial', sans-serif;
+    margin-top: 20px;
+    cursor: pointer; 
+    transition: 0.3s;
+    outline: none;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+.menu a:hover{
+    color: #ccc;
+}
+.imgLogo{
+    position: absolute;
+    display: block;
+    background: #fff;
+    border: 10px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 8px;
+    margin-left: -10px;
+    width: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    float: none;
+    margin-top: 10px;
+}
+.imgLogo:hover{
+    border-left: 40px solid #fff;
+}
+#darkModeBtn{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    transition: 0.2s;
+}
+#darkModeBtn:hover{
+    color: #eee;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+    color: #000;
+    font-family: sans-serif;
+    animation-name: animar;
+    animation-duration: 1s;
+}
+.conjuntos{
+    border: none;
+    padding: 15px;
+}
+h2 {
+    font-size: 20pt;
+    color: #111;
+}
+p {
+    font-size: 25pt;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 8px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+p:hover{
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+#conteudo h1 {
+    font-size: 30pt;
+    color: #111;
+    font-size: 40pt;
+}
+.conteudo i{
+    font-size: 20pt;
+    color: #111;
+
+}
+@keyframes animar{
+    from{
+        margin-top: 20%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes txtAnim{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .container {
+        width: 600px;
+    }
+    .conjuntos p{
+        font-size: 15pt;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #menuMobile{
+        display: flex;
+    }
+    #darkModeBtnMobile{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu button{
+        color: #333;
+    }
+    .logo{
+        opacity: 0;
+    }
+    #tel{
+        font-size: 16pt;
+    }
+    .conjuntos p{
+        font-size: 10pt;
+    }
+    .conteudo{
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .conjuntos p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .conjuntos p{
+        width: 200px;
+        margin: 0 auto 0 auto;
+        font-size: 10px;
+    }
+}

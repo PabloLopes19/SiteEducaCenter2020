@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/programação.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ab5fad5172.js"></script>
+    <link rel="shortcut icon" href="assets/logo-2019_2_.ico" type="image/x-icon">
+    <title>Desenvolvimento de sistemas | Educa Center</title>
+</head>
+<body>
+    <div id="menuMobile">
+        <button onclick="redirectPrincipal()"><i class="material-icons">home</i> <h1>início</h1></button>
+        <button onclick="redirectCursos()"><i class="material-icons">pageview</i><h1>Cursos</h1></button>
+        <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
+        <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
+    </div>
+        <div class="colorTheme">
+            <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
+        </div>
+    <div align="center" class="logo">
+        <img onclick="easterEgg()" class="imgLogo" src="assets/logo 2019.jpg"/>
+    </div>
+    <header class="cabecalho">
+        <div class="menu">
+            <a href="index.html" id="btnPrincipal">início</a>
+            <a href="cursos.html">cursos</a>
+            <a href="sobre.html">sobre</a>
+            <a href="contatos.html">contato</a>
+        </div>
+
+        <i id="darkModeBtn" title="Modo Noturno" class="material-icons">invert_colors</i>
+    </header>
+    <h1 class="titleProgramacao">Desenvolvimento de sistemas</h1>
+    <div class="container">
+        <div class="interesse">
+            <h1 class="title">O que é:</h1>
+            <p class="paragraph">
+                Esse curso é voltado para aquela pessoa que se interessa em programação e desenvolvimento de aplicações que irão facilitar e ajudar pessoas a fazerem o seu trabalho. Você vai aprender a criar uma interface em janela, armazenar dados do servidor e organiza-los com algoritmos. Além de C#, você vai aprender sobre visual basic, SQL, e a integração do BackEnd com o FrontEnd da aplicação! 
+            </p>
+        </div>
+        <div class="fodao">
+            <h1 class="title">O que você vai aprender:</h1>
+            <p class="paragraph">
+                O curso de Programação C# com Visual Studio foi idealizado, sendo este o terceiro de quatro módulos voltados para automação comercial. Com um conteúdo desenvolvido com base nos conceitos fundamentais de programação orientada a objetos e as funcionalidades da ferramenta, este módulo apresenta novos conceitos para o aluno além de aprofundar alguns conceitos abordados no módulo anterior.
+            </p>
+        </div>
+        <img src="assets/csharp.jpg" />
+        <div class="form">
+            <h1 class="btnInter">Ficou interessado?</h1>
+            <button onclick="redirectContato()">Clique aqui</button>
+        </div>
+    </div>
+    <script src="js/principal.js"></script>
+    <script src="js/darkModeCursos.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/programação.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ab5fad5172.js"></script>
+    <link rel="shortcut icon" href="assets/logo-2019_2_.ico" type="image/x-icon">
+    <title>Inglês | Educa Center</title>
+</head>
+<body>
+    <div id="menuMobile">
+        <button onclick="redirectPrincipal()"><i class="material-icons">home</i> <h1>início</h1></button>
+        <button onclick="redirectCursos()"><i class="material-icons">pageview</i><h1>Cursos</h1></button>
+        <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
+        <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
+    </div>
+        <div class="colorTheme">
+            <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
+        </div>
+    <div align="center" class="logo">
+        <img onclick="easterEgg()" class="imgLogo" src="assets/logo 2019.jpg"/>
+    </div>
+    <header class="cabecalho">
+        <div class="menu">
+            <a href="index.html" id="btnPrincipal">início</a>
+            <a href="cursos.html">cursos</a>
+            <a href="sobre.html">sobre</a>
+            <a href="contatos.html">contato</a>
+        </div>
+
+        <i id="darkModeBtn" title="Modo Noturno" class="material-icons">invert_colors</i>
+    </header>
+    <h1 class="titleProgramacao">Inglês</h1>
+    <div class="container">
+        <div class="interesse">
+            <h1 class="title">O que é:</h1>
+            <p class="paragraph">
+                Hey there! Do you know how important is learn english for your career and projects? It's really important because it's basically the global language on the nowadays. Você conseguiu ler esse texto sem problemas? Se sim, parabéns! Se não, saiba que é muito importante dominar esse idioma, visto que é a língua mais falada atualmente, além de ser um grande diferencial em um currículo para uma vaga de emprego!
+            </p>
+        </div>
+        <div class="fodao">
+            <h1 class="title">O que você vai aprender:</h1>
+            <p class="paragraph">
+                Nosso principal objetivo é desenvolver as habilidades fundamentais para a comunicação total do aluno: conversação, compreensão auditiva, leitura e escrita. Você vai aprender os principais conceitos e técnicas de pronúncia e escrita, e sairá do curso com um grande conhecimento adquirido e estará pronto para o mercado de trabalho.
+            </p>
+        </div>
+        <img src="assets/ingles.jpg" />
+        <div class="form">
+            <h1 class="btnInter">Ficou interessado?</h1>
+            <button onclick="redirectContato()">Clique aqui</button>
+        </div>
+    </div>
+    <script src="js/principal.js"></script>
+    <script src="js/darkModeCursos.js"></script>
+</body>
+</html>

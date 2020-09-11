@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/cursos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo-2019_2_.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab5fad5172.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="google" content="notranslate">
+    <title>Cursos | Educa Center</title>
+</head>
+<body class="fundo">
+    <div id="menuMobile">
+        <button onclick="redirectPrincipal()"><i class="material-icons">home</i> <h1>Principal</h1></button>
+        <button onclick="loop()"><i class="material-icons">pageview</i><h1>Cursos</h1></button>
+        <button onclick="redirectSobre()"><i class="material-icons">search</i><h1>Sobre</h1></button>
+        <button onclick="redirectContato()"><i class="material-icons">call</i> <h1>Contato</h1></button>
+
+        <div class="colorTheme">
+           <i id="darkModeBtnMobile" class="material-icons">invert_colors</i>
+        </div>
+    </div>
+    <div align="center" class="logo">
+        <img onclick="easterEgg()" class="imgLogo" src="assets/logo 2019.jpg"/>
+    </div>
+    <header class="cabecalho">
+        <div class="menu">
+                <a href="index.html" id="btnPrincipal">início</a>
+                <a onclick="loop()">cursos</a>
+                <a href="sobre.html">sobre</a>
+                <a href="contatos.html">contato</a>
+        </div>
+        <div class="colorTheme">
+           <i id="darkModeBtn" class="material-icons">invert_colors</i>
+        </div>
+    </header>
+    <div class="title">
+            <h1 class="titleContainer">Cursos disponíveis</h1>
+    </div>
+    <div class="container">
+        <div class="formCursos">
+            <h1>Desenvolvimento de sistemas</h1>
+            <p>
+
+            </p>
+            <button onclick="programming()" class="btnform"><a><a href="programacao.html">mais</a></a></button>
+        </div>
+        <div class="formCursos" data-aos="fade-right">
+                <h1>Designer digital</h1>
+                <p>
+    
+                </p>
+                <button onclick="webDesign()" class="btnform"><a href="WebDesign.html">Mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Tecnologia Fundamental</h1>
+                <p>
+                    
+                </p>
+                <button onclick="tecFundament()" class="btnform"><a href="tecnolo.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Projetos e desenhos</h1>
+                <p>
+    
+                </p>
+                <button onclick="projDesenhos()" class="btnform"><a href="projDesenhos.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Melhor idade conectada</h1>
+                <p>
+    
+                </p>
+                <button onclick="melhorIdade()" class="btnform"><a href="melhorIdade.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Técnicas em vendas</h1>
+                <p>
+    
+                </p>
+                <button onclick="vendaTecni()" class="btnform"><a href="tecnicaVendas.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Técnicas em crédito e cobrança</h1>
+                <p>
+    
+                </p>
+                <button onclick="credECobr()" class="btnform"><a href="crediECobr.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Técnicas contábeis</h1>
+                <p>
+    
+                </p>
+                <button onclick="contabeis()" class="btnform"><a href="contabeis.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Auxiliar veterinário</h1>
+                <p>
+    
+                </p>
+                <button onclick="veterinario()" class="btnform"><a href="veterinario.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Hardware</h1>
+                <p>
+    
+                </p>
+                <button onclick="hardware()" class="btnform"><a href="hardware.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Robótica</h1>
+                <p>
+    
+                </p>
+                <button onclick="robotica()" class="btnform"><a href="robotica.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Inglês</h1>
+                <p>
+    
+                </p>
+                <button onclick="ingles()" class="btnform"><a href="ingles.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Atendente de farmácia</h1>
+                <p>
+    
+                </p>
+                <button onclick="farmacia()" class="btnform"><a href="farmacia.html">mais</a></button>
+        </div>
+        <div class="formCursos">
+                <h1>Desenvolvimento de jogos</h1>
+                <p>
+    
+                </p>
+                <button onclick="jogos()" class="btnform"><a href="jogos.html">mais</a></button>
+        </div>
+    </div>
+    <footer>
+        <div class="containerFooter">
+            <i id="facebook" onclick="facebook()" class="fab fa-facebook-square"></i>
+            <i id="insta" onclick="insta()" class="fab fa-instagram"></i>
+        </div>
+        <button onclick="easterEgg()" class="cret">Créditos</button>
+        <p><i id="place" class="material-icons">place</i>R. Iririú, 1060 - Saguaçu, Joinville - SC, 89227-045</p>
+        <p><i id="phone" class="material-icons">phone</i>(47) 3202-5211</p>
+        <p>© EducaCenter 2020</p>
+    </footer>
+    <script src="js/cursos.js"></script>
+</body>
+</html>

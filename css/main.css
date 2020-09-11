@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #FF7043;
+}
+.container{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 4%;
+}
+img{
+    margin: 20px;
+    width: 80px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+input{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FF5722;
+    font-weight: bold;
+    transition: 0.3s;
+}
+input:focus{
+    border: 3px solid #FF8A65;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+::placeholder{
+    color: #ccc;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14pt;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+#btnReg{
+    background: #fff;
+    border: 3px solid #FF8A65;
+    border-radius: 6px;
+    color: #FF8A65;
+}
+#btnReg:hover{
+    background: #FF8A65;
+    color: #fff;
+}
+#btnLogin{
+    background: #FF8A65;
+    color: white;
+    border: 3px solid #FF8A65;
+    border-radius: 6px;
+}
+#btnLogin:hover{
+    background: white;
+    color: #FF8A65;
+}
